@@ -4,7 +4,7 @@
 // At query time a card's meaning score is the best match among its vectors, so a
 // visitor's question only needs to resemble ONE of them.
 //
-// Output: src/data/vectors.json (generated, not committed).
+// Output: public/vectors.json (generated, not committed).
 // Run: npm run embed  (needs internet the first time to download the model)
 
 import { readFile, writeFile } from 'node:fs/promises';
@@ -15,7 +15,8 @@ export const MODEL_ID = 'Xenova/all-MiniLM-L6-v2';
 export const DTYPE = 'q8';
 
 const CARDS_PATH = new URL('../src/data/cards.json', import.meta.url);
-const OUT_PATH = new URL('../src/data/vectors.json', import.meta.url);
+// Served from public/ so the browser fetches it only when the chat opens.
+const OUT_PATH = new URL('../public/vectors.json', import.meta.url);
 
 // 4 decimals keeps the file small with no visible change in scores.
 const round = (v) => Math.round(v * 1e4) / 1e4;
@@ -35,4 +36,4 @@ for (const card of cards) {
 
 await writeFile(OUT_PATH, JSON.stringify(out));
 const total = out.cards.reduce((n, c) => n + c.vectors.length, 0);
-console.log(`Embedded ${cards.length} cards into ${total} vectors of ${out.dims} dims → src/data/vectors.json`);
+console.log(`Embedded ${cards.length} cards into ${total} vectors of ${out.dims} dims → public/vectors.json`);

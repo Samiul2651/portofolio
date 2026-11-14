@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 # Generated in CI by scripts/embed-cards.mjs
-src/data/vectors.json
+public/vectors.json

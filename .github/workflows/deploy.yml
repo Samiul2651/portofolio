@@ -24,6 +24,8 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - name: Unit tests
+        run: npm test
       - name: Cache embedding model
         uses: actions/cache@v4
         with:
@@ -32,7 +34,7 @@ jobs:
       - name: Embed knowledge cards
         run: npm run embed
       - name: Show vectors file size
-        run: ls -lh src/data/vectors.json
+        run: ls -lh public/vectors.json
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:

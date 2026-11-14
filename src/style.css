@@ -34,3 +34,29 @@ body {
 .muted {
   color: var(--muted);
 }
+
+/* Temporary test chat (step 4). Replaced in step 6. */
+.small { font-size: 13px; }
+.test-chat {
+  margin-top: 32px;
+  padding: 20px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  max-width: 640px;
+}
+.test-chat h2 { margin: 0; }
+#ask-form { display: flex; gap: 8px; margin: 12px 0; }
+#ask-form input {
+  flex: 1; min-height: 44px; padding: 0 12px; border-radius: 10px;
+  border: 1px solid var(--border); background: var(--bg); color: var(--text); font: inherit;
+}
+#ask-form button, .mail-btn {
+  min-height: 44px; padding: 0 16px; border-radius: 10px; border: 0;
+  background: #e8b04b; color: #14110a; font-weight: 600; cursor: pointer;
+  display: inline-flex; align-items: center; text-decoration: none;
+}
+.turn { border-top: 1px solid var(--border); padding-top: 12px; margin-top: 12px; }
+.q { font-weight: 600; margin: 0 0 4px; }
+.a { margin: 0 0 8px; }
+.retrieval { margin: 0; padding-left: 18px; }
