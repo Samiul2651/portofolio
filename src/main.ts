@@ -51,11 +51,12 @@ const graph = createGraph(app.querySelector('#graph-host')!, {
     const card = cards.get(id);
     if (card) sheet.open(card);
   },
-  onViewChange: (topic) => {
-    backBtn.hidden = !topic;
-    hint.textContent = topic ? 'Tap an item to read it.' : 'Tap a topic to open it.';
+  onViewChange: (depth) => {
+    backBtn.hidden = depth === 0;
+    backBtn.textContent = depth > 1 ? 'Back' : 'Back to Samiul';
+    hint.textContent = depth ? 'Tap an item to open it.' : 'Tap a topic to open it.';
   },
 });
-backBtn.addEventListener('click', () => graph.showRoot());
+backBtn.addEventListener('click', () => graph.back());
 
 createAsk(app.querySelector('#ask-host')!);

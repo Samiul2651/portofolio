@@ -217,6 +217,18 @@ footer {
   stroke-width: 2;
 }
 
+.group-marker {
+  fill: var(--ink);
+}
+
+.queue.group .queue-shape {
+  stroke-width: 2.5;
+}
+
+.queue.group.active .queue-shape {
+  fill: var(--signal);
+}
+
 .queue.in-progress .queue-shape {
   stroke-dasharray: 5 4;
 }

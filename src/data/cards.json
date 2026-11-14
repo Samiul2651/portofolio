@@ -487,5 +487,98 @@
       "Do you study AI in your free time?",
       "Vector database deep dive?"
     ]
+  },
+  {
+    "id": "cp-codeforces",
+    "category": "Competitive programming",
+    "title": "Codeforces",
+    "answer": "He is a Codeforces Expert with a max rating of 1695, 100+ rated contests and 1,000+ problems solved. Profile: codeforces.com/profile/Samiul2651",
+    "questions": [
+      "Codeforces profile?",
+      "Codeforces Expert?",
+      "How many problems have you solved?"
+    ]
+  },
+  {
+    "id": "cp-codechef",
+    "category": "Competitive programming",
+    "title": "CodeChef",
+    "answer": "His max rating on CodeChef is 1846.",
+    "questions": [
+      "CodeChef rating?",
+      "Do you use CodeChef?"
+    ]
+  },
+  {
+    "id": "cp-atcoder",
+    "category": "Competitive programming",
+    "title": "AtCoder",
+    "answer": "His max rating on AtCoder is 1165.",
+    "questions": [
+      "AtCoder rating?",
+      "Do you do AtCoder contests?"
+    ]
+  },
+  {
+    "id": "cp-icpc-asia-west",
+    "category": "Competitive programming",
+    "title": "ICPC Asia West Continental Final 2023",
+    "answer": "He received an Honourable Mention at the ICPC Asia West Continental Final 2023.",
+    "questions": [
+      "ICPC Asia West?",
+      "ICPC continental final?",
+      "Honourable Mention?"
+    ]
+  },
+  {
+    "id": "cp-icpc-dhaka",
+    "category": "Competitive programming",
+    "title": "ICPC Dhaka Regional 2023",
+    "answer": "He placed 40th at the ICPC Dhaka Regional 2023.",
+    "questions": [
+      "ICPC Dhaka regional?",
+      "Dhaka regional rank?"
+    ]
+  },
+  {
+    "id": "cp-iut",
+    "category": "Competitive programming",
+    "title": "IUT Inter-University Programming Contest 2024",
+    "answer": "He placed 40th at the IUT Inter-University Programming Contest 2024.",
+    "questions": [
+      "IUT contest?",
+      "IUT IUPC rank?"
+    ]
+  },
+  {
+    "id": "cp-cuet",
+    "category": "Competitive programming",
+    "title": "CUET Inter-University Programming Contest 2024",
+    "answer": "He placed 54th at the CUET Inter-University Programming Contest 2024.",
+    "questions": [
+      "CUET contest?",
+      "CUET IUPC rank?"
+    ]
+  },
+  {
+    "id": "cp-buet",
+    "category": "Competitive programming",
+    "title": "BUET IUPC 2023",
+    "answer": "He placed 67th at the BUET Inter-University Programming Contest 2023.",
+    "questions": [
+      "BUET contest?",
+      "BUET IUPC rank?"
+    ]
+  },
+  {
+    "id": "cp-bracu",
+    "category": "Competitive programming",
+    "title": "CS Spectrum BRACU Intra-University Contest 2023",
+    "answer": "He placed 3rd at the CS Spectrum BRACU Intra-University Contest 2023.",
+    "questions": [
+      "BRACU contest?",
+      "Intra-university contest?",
+      "CS Spectrum?"
+    ]
   }
 ]

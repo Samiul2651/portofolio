@@ -2,8 +2,9 @@
 // Every `card` id must exist in cards.json (a unit test checks this).
 
 export interface GraphItem {
-  card: string;
   label: string; // short, shown on the graph; use \n to break lines
+  card?: string; // a leaf opens this card
+  children?: GraphItem[]; // a group opens its own view instead
   inProgress?: boolean;
 }
 
@@ -20,18 +21,24 @@ export const TOPICS: GraphTopic[] = [
     id: 'experience',
     label: 'Experience',
     items: [
-      { card: 'orbitax-company', label: 'Orbitax' },
-      { card: 'work-event-driven', label: 'Event-driven\nservices' },
-      { card: 'work-race-condition', label: 'Race\ncondition fix' },
-      { card: 'work-async-70', label: '70% faster\nworkflow' },
-      { card: 'work-import-pipeline', label: 'Data import\npipeline' },
-      { card: 'work-spreadsheet-import', label: 'Spreadsheet\nimport' },
-      { card: 'work-file-publishing', label: 'File\npublishing' },
-      { card: 'work-form-generation', label: '60% faster\nforms' },
-      { card: 'work-testing', label: 'Testing' },
-      { card: 'work-access-control', label: 'Access\ncontrol' },
-      { card: 'work-template-redesign', label: 'Template\nredesign' },
-      { card: 'work-stack', label: 'Work\nstack' },
+      {
+        label: 'Orbitax',
+        children: [
+          { card: 'orbitax-company', label: 'About Orbitax' },
+          { card: 'about-role', label: 'My role' },
+          { card: 'work-event-driven', label: 'Event-driven services' },
+          { card: 'work-race-condition', label: 'Race condition fix' },
+          { card: 'work-async-70', label: '70% faster workflow' },
+          { card: 'work-import-pipeline', label: 'Data import pipeline' },
+          { card: 'work-spreadsheet-import', label: 'Spreadsheet import' },
+          { card: 'work-file-publishing', label: 'File publishing' },
+          { card: 'work-form-generation', label: '60% faster forms' },
+          { card: 'work-testing', label: 'Testing' },
+          { card: 'work-access-control', label: 'Access control' },
+          { card: 'work-template-redesign', label: 'Template redesign' },
+          { card: 'work-stack', label: 'Work stack' },
+        ],
+      },
     ],
   },
   {
@@ -61,7 +68,15 @@ export const TOPICS: GraphTopic[] = [
   {
     id: 'education',
     label: 'Education',
-    items: [{ card: 'education', label: 'BSc CS\nBRAC Univ.' }],
+    items: [
+      {
+        label: 'BRAC University',
+        children: [
+          { card: 'education', label: 'BSc in Computer Science' },
+          { card: 'research-paper', label: 'Thesis' },
+        ],
+      },
+    ],
   },
   {
     id: 'research',
@@ -72,9 +87,30 @@ export const TOPICS: GraphTopic[] = [
     id: 'cp',
     label: 'Coding\ncontests',
     items: [
-      { card: 'cp-overview', label: 'Codeforces\nExpert' },
-      { card: 'cp-icpc', label: 'ICPC' },
-      { card: 'cp-other', label: 'Other\ncontests' },
+      {
+        label: 'Online judges',
+        children: [
+          { card: 'cp-codeforces', label: 'Codeforces' },
+          { card: 'cp-codechef', label: 'CodeChef' },
+          { card: 'cp-atcoder', label: 'AtCoder' },
+        ],
+      },
+      {
+        label: 'ICPC',
+        children: [
+          { card: 'cp-icpc-asia-west', label: 'Asia West Final 2023' },
+          { card: 'cp-icpc-dhaka', label: 'Dhaka Regional 2023' },
+        ],
+      },
+      {
+        label: 'University contests',
+        children: [
+          { card: 'cp-iut', label: 'IUT IUPC 2024' },
+          { card: 'cp-cuet', label: 'CUET IUPC 2024' },
+          { card: 'cp-buet', label: 'BUET IUPC 2023' },
+          { card: 'cp-bracu', label: 'BRACU CS Spectrum 2023' },
+        ],
+      },
     ],
   },
   {

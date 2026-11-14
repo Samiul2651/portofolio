@@ -100,7 +100,14 @@ describe('graph', async () => {
 
   it('every graph item points to a real card', () => {
     expect(ids.has(ROOT_CARD)).toBe(true);
-    for (const t of TOPICS) for (const item of t.items) expect(ids.has(item.card), item.card).toBe(true);
+    type Item = { label: string; card?: string; children?: Item[] };
+    const check = (items: Item[]) => {
+      for (const item of items) {
+        if (item.children) check(item.children);
+        else expect(item.card && ids.has(item.card), item.label).toBe(true);
+      }
+    };
+    for (const t of TOPICS) check(t.items);
   });
 });
 
