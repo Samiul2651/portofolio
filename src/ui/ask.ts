@@ -8,9 +8,9 @@ export function createAsk(host: HTMLElement) {
   host.innerHTML = `
     <div class="ask-head">
       <h2 id="ask-title">Ask Samiul</h2>
-      <label class="toggle"><input type="checkbox" id="show-retrieval" /> Show retrieval</label>
+      <label class="toggle"><input type="checkbox" id="show-retrieval" /> Show matches</label>
     </div>
-    <p class="muted small">Retrieval only · runs in your browser · no LLM</p>
+    <p class="muted small">Finds the closest answer Samiul has written. It runs in your browser, with no AI model behind it.</p>
     <form id="ask-form">
       <input id="q" autocomplete="off" placeholder="Ask about my work, projects or skills" aria-labelledby="ask-title" />
       <button type="submit">Ask</button>
@@ -46,22 +46,22 @@ export function createAsk(host: HTMLElement) {
     const retrieval = reply.top
       .map(
         (r) =>
-          `<li>${escapeHtml(r.card.title)} — <b>${r.score.toFixed(2)}</b> <span>(meaning ${r.meaning.toFixed(2)}, keywords ${r.keywords.toFixed(2)})</span></li>`,
+          `<li><span class="m-title">${escapeHtml(r.card.title)}</span><span class="m-score">${r.score.toFixed(2)}</span><span class="m-detail">meaning ${r.meaning.toFixed(2)}, keywords ${r.keywords.toFixed(2)}</span></li>`,
       )
       .join('');
     const mail = reply.mailto
-      ? `<a class="mail-btn" href="${reply.mailto}">Email Samiul this question</a>
+      ? `<a class="mail-btn" href="${reply.mailto}">Email this question to Samiul</a>
          <p class="muted small">Opens your email app with the question filled in.</p>`
       : '';
     const turn = document.createElement('div');
-    turn.className = 'turn';
+    turn.className = `turn ${reply.answered ? 'answered' : 'unanswered'}`;
     turn.innerHTML = `
-      <p class="msg msg-q">${escapeHtml(question)}</p>
-      <div class="msg msg-a">
+      <p class="msg-q">${escapeHtml(question)}</p>
+      <div class="msg-a">
         <p>${linkify(reply.text)}</p>
         ${mail}
       </div>
-      <ol class="retrieval small" ${showRetrieval.checked ? '' : 'hidden'}>${retrieval}</ol>`;
+      <ol class="retrieval" ${showRetrieval.checked ? '' : 'hidden'}>${retrieval}</ol>`;
     log.prepend(turn);
   }
 
@@ -70,7 +70,7 @@ export function createAsk(host: HTMLElement) {
     if (!question) return;
     startWarmUp();
     input.value = '';
-    status.textContent = 'Searching…';
+    status.textContent = 'Looking for an answer…';
     try {
       render(question, await ask(question));
       status.textContent = '';

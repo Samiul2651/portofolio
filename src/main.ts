@@ -1,3 +1,7 @@
+import '@fontsource/ibm-plex-sans/400.css';
+import '@fontsource/ibm-plex-sans/500.css';
+import '@fontsource/ibm-plex-sans/600.css';
+import '@fontsource/ibm-plex-mono/400.css';
 import './style.css';
 import cardsJson from './data/cards.json';
 import type { Card } from './chat/rank';
@@ -12,8 +16,8 @@ const app = document.querySelector<HTMLDivElement>('#app')!;
 app.innerHTML = `
   <header class="hero">
     <h1>Ishtiaq Samiul</h1>
-    <p class="headline">Backend Software Engineer — Event-Driven Systems · C#/.NET</p>
-    <p class="muted">Dhaka, Bangladesh · Open to relocation and remote work</p>
+    <p class="headline">I build event-driven backend systems in C# and .NET.</p>
+    <p class="muted">Based in Dhaka, Bangladesh. Open to relocation and remote work.</p>
     <nav class="links" aria-label="Contact">
       <a href="mailto:${PUBLIC_EMAIL}">Email</a>
       <a href="https://linkedin.com/in/samiul2651" target="_blank" rel="noopener">LinkedIn</a>
@@ -26,7 +30,7 @@ app.innerHTML = `
     <section class="map" aria-labelledby="map-title">
       <div class="map-head">
         <h2 id="map-title">Explore</h2>
-        <button type="button" class="back" hidden>← Samiul</button>
+        <button type="button" class="back" hidden>Back to Samiul</button>
       </div>
       <p class="muted small" id="map-hint">Tap a topic to open it.</p>
       <div id="graph-host"></div>
@@ -35,7 +39,7 @@ app.innerHTML = `
     <section class="ask" id="ask-host" aria-label="Ask Samiul chatbot"></section>
   </main>
 
-  <footer class="muted small">Built with Vite, TypeScript and Transformers.js · hosted free on GitHub Pages</footer>
+  <footer class="muted small">Built with Vite, TypeScript and Transformers.js. Hosted on GitHub Pages.</footer>
 `;
 
 const sheet = createSheet(document.body);
@@ -49,7 +53,7 @@ const graph = createGraph(app.querySelector('#graph-host')!, {
   },
   onViewChange: (topic) => {
     backBtn.hidden = !topic;
-    hint.textContent = topic ? 'Tap an item to read more. Tap the centre to go back.' : 'Tap a topic to open it.';
+    hint.textContent = topic ? 'Tap an item to read it.' : 'Tap a topic to open it.';
   },
 });
 backBtn.addEventListener('click', () => graph.showRoot());

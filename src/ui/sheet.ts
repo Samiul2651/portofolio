@@ -31,7 +31,7 @@ export function createSheet(host: HTMLElement) {
 
   function open(card: Card) {
     returnFocus = document.activeElement as HTMLElement | null;
-    category.textContent = card.category;
+    category.textContent = card.category.toLowerCase();
     title.textContent = card.title.replace(/\s*\((done|in progress)\)$/i, '');
     body.innerHTML = linkify(card.answer);
     backdrop.hidden = false;
