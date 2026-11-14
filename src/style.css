@@ -1,0 +1,36 @@
+/* Colours from the mockup. Full styling comes in step 6. */
+:root {
+  --bg: #0f1215;
+  --panel: #161a1f;
+  --border: #262b33;
+  --text: #e8eaed;
+  --muted: #9aa3ae;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+.layout {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 20px;
+}
+
+.intro h1 {
+  margin: 0 0 8px;
+  font-size: clamp(32px, 6vw, 48px);
+}
+
+.muted {
+  color: var(--muted);
+}
