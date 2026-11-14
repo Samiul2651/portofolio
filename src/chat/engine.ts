@@ -66,7 +66,7 @@ export async function ask(question: string): Promise<Reply> {
   if (canAnswer(top[0])) return { answered: true, text: top[0].card.answer, top };
   return {
     answered: false,
-    text: "Samiul hasn't written an answer to that yet. Email him the question and he'll reply.",
+    text: "I haven't written an answer to that yet. Email me the question and I'll reply.",
     top,
     mailto: mailtoFor(question),
   };

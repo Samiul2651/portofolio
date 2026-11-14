@@ -10,7 +10,7 @@ export function createAsk(host: HTMLElement) {
       <h2 id="ask-title">Ask Samiul</h2>
       <label class="toggle"><input type="checkbox" id="show-retrieval" /> Show matches</label>
     </div>
-    <p class="muted small">Finds the closest answer Samiul has written. It runs in your browser, with no AI model behind it.</p>
+    <p class="muted small">Finds the closest answer I've written. It runs in your browser, with no AI model behind it.</p>
     <form id="ask-form">
       <input id="q" autocomplete="off" placeholder="Ask about my work, projects or skills" aria-labelledby="ask-title" />
       <button type="submit">Ask</button>
@@ -50,7 +50,7 @@ export function createAsk(host: HTMLElement) {
       )
       .join('');
     const mail = reply.mailto
-      ? `<a class="mail-btn" href="${reply.mailto}">Email this question to Samiul</a>
+      ? `<a class="mail-btn" href="${reply.mailto}">Email me this question</a>
          <p class="muted small">Opens your email app with the question filled in.</p>`
       : '';
     const turn = document.createElement('div');

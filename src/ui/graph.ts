@@ -121,7 +121,7 @@ export function createGraph(host: HTMLElement, opts: GraphOptions) {
     const H = 360;
     const C = { x: W / 2, y: H / 2 };
     svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
-    svg.setAttribute('aria-label', 'Map of Samiul. Tap a topic to open it.');
+    svg.setAttribute('aria-label', 'Map of my work. Tap a topic to open it.');
 
     const edges = el('g', { class: 'edges' });
     const nodes = el('g');
@@ -157,7 +157,7 @@ export function createGraph(host: HTMLElement, opts: GraphOptions) {
 
     const centre = el('g', { class: 'exchange root' });
     centre.append(hexagon(C.x, C.y, 44), multiline(C.x, C.y, 'Samiul', 'exchange-label', 15));
-    asButton(centre, 'About Samiul', () => opts.onOpenCard(ROOT_CARD));
+    asButton(centre, 'About me', () => opts.onOpenCard(ROOT_CARD));
     nodes.append(centre);
 
     opts.onViewChange?.(0);

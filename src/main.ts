@@ -36,7 +36,7 @@ app.innerHTML = `
       <div id="graph-host"></div>
     </section>
 
-    <section class="ask" id="ask-host" aria-label="Ask Samiul chatbot"></section>
+    <section class="ask" id="ask-host" aria-label="Ask me"></section>
   </main>
 
   <footer class="muted small">Built with Vite, TypeScript and Transformers.js. Hosted on GitHub Pages.</footer>
