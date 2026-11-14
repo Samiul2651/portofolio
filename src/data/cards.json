@@ -286,13 +286,12 @@
     "id": "skills-learning",
     "category": "Skills",
     "title": "Currently learning",
-    "answer": "I'm currently learning Kotlin for backend work, PostgreSQL and AWS.",
+    "answer": "I'm currently deep diving into AI and LLMs: how they work under the hood, RAG and vector search.",
     "questions": [
       "What are you learning now?",
-      "Do you know AWS?",
-      "PostgreSQL?",
-      "Kotlin?",
-      "Cloud experience?"
+      "What are you studying currently?",
+      "Are you learning AI?",
+      "LLM deep dive?"
     ]
   },
   {
