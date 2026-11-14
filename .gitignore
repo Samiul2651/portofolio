@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Generated in CI by scripts/embed-cards.mjs
+src/data/vectors.json
