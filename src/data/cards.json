@@ -4,265 +4,488 @@
     "category": "About",
     "title": "Who is Samiul?",
     "answer": "Ishtiaq Samiul is a backend software engineer from Dhaka, Bangladesh. He builds event-driven systems in C# and .NET at Orbitax, a global tax compliance SaaS, where he has worked since October 2024.",
-    "questions": ["Who are you?", "Tell me about Samiul", "Introduce yourself", "What do you do?"]
+    "questions": [
+      "Who are you?",
+      "Tell me about Samiul",
+      "Introduce yourself",
+      "What do you do?"
+    ]
   },
   {
     "id": "about-role",
     "category": "About",
     "title": "Current role",
     "answer": "He is an Associate Software Engineer at Orbitax. He joined in October 2024 on an offer he got before graduating.",
-    "questions": ["What is his job title?", "Where does he work now?", "What is your current position?"]
+    "questions": [
+      "What is his job title?",
+      "Where does he work now?",
+      "What is your current position?"
+    ]
   },
   {
     "id": "about-location",
     "category": "About",
     "title": "Location and relocation",
     "answer": "He lives in Dhaka, Bangladesh (UTC+6). He is open to relocation and to remote work. For jobs outside Bangladesh he would need visa sponsorship.",
-    "questions": ["Where are you based?", "Are you open to relocation?", "Can you work remotely?", "Do you need a visa?", "What time zone are you in?"]
+    "questions": [
+      "Where are you based?",
+      "Are you open to relocation?",
+      "Can you work remotely?",
+      "Do you need a visa?",
+      "What time zone are you in?"
+    ]
   },
   {
     "id": "about-focus",
     "category": "About",
     "title": "Main interests",
     "answer": "His main interests are event-driven architecture, distributed systems, AI and LLM integration, and building practical tools people use every day.",
-    "questions": ["What are you interested in?", "What kind of work do you enjoy?", "What is your focus area?"]
+    "questions": [
+      "What are you interested in?",
+      "What kind of work do you enjoy?",
+      "What is your focus area?"
+    ]
   },
   {
     "id": "about-languages",
     "category": "About",
     "title": "Spoken languages",
     "answer": "He speaks English fluently and is learning Japanese at beginner level.",
-    "questions": ["What languages do you speak?", "Do you speak Japanese?", "How is your English?"]
+    "questions": [
+      "What languages do you speak?",
+      "Do you speak Japanese?",
+      "How is your English?"
+    ]
   },
   {
     "id": "about-looking",
     "category": "About",
     "title": "What he is looking for",
     "answer": "He is looking for backend or distributed systems roles, ideally with some AI or LLM work. He is open to relocation and remote roles.",
-    "questions": ["Are you looking for a job?", "What role do you want?", "Are you open to new opportunities?", "Is he hiring-ready?"]
+    "questions": [
+      "Are you looking for a job?",
+      "What role do you want?",
+      "Are you open to new opportunities?",
+      "Is he hiring-ready?"
+    ]
   },
   {
     "id": "contact",
     "category": "Contact",
     "title": "How to contact him",
     "answer": "Email: ishtiak.samiul.2651@gmail.com. LinkedIn: linkedin.com/in/samiul2651. GitHub: github.com/Samiul2651.",
-    "questions": ["How can I contact you?", "What is your email?", "LinkedIn profile?", "How do I reach Samiul?", "GitHub link?"]
+    "questions": [
+      "How can I contact you?",
+      "What is your email?",
+      "LinkedIn profile?",
+      "How do I reach Samiul?",
+      "GitHub link?"
+    ]
   },
   {
     "id": "orbitax-company",
     "category": "Work",
     "title": "About Orbitax",
     "answer": "Orbitax is a global tax compliance SaaS platform. He works across several of its modules, building backend services and data workflows.",
-    "questions": ["What is Orbitax?", "What does your company do?", "What does he work on at Orbitax?"]
+    "questions": [
+      "What is Orbitax?",
+      "What does your company do?",
+      "What does he work on at Orbitax?"
+    ]
   },
   {
     "id": "work-stack",
     "category": "Work",
     "title": "Work tech stack",
     "answer": "At work he uses C#, ASP.NET Core, RabbitMQ, MassTransit, MongoDB, Redis, Centrifugo, SpreadsheetGear, Angular and TypeScript.",
-    "questions": ["What tech stack do you use at work?", "Which technologies at Orbitax?", "What tools do you use daily?"]
+    "questions": [
+      "What tech stack do you use at work?",
+      "Which technologies at Orbitax?",
+      "What tools do you use daily?"
+    ]
   },
   {
     "id": "work-event-driven",
     "category": "Work",
     "title": "Event-driven services",
     "answer": "He develops event-driven services with RabbitMQ and MassTransit. He uses saga state machines, the outbox pattern and event sourcing to keep data consistent across services.",
-    "questions": ["Have you worked with RabbitMQ?", "Experience with event-driven architecture?", "Do you know sagas or the outbox pattern?", "Distributed systems experience?", "Microservices experience?"]
+    "questions": [
+      "Have you worked with RabbitMQ?",
+      "Experience with event-driven architecture?",
+      "Do you know sagas or the outbox pattern?",
+      "Distributed systems experience?",
+      "Microservices experience?"
+    ]
   },
   {
     "id": "work-race-condition",
     "category": "Work",
     "title": "Race condition fix",
     "answer": "He found and fixed a race condition in the workbook job system. Workbooks run through state machines with at most 10 jobs at once, so many wait in a queue. An idle-expiry cleanup could delete a queued workbook just as a job picked up its next step. He fixed it by hardening lock expiry (TTL) and timer-thread handling.",
-    "questions": ["What is the hardest bug you fixed?", "Concurrency experience?", "Tell me about a race condition", "A tricky production issue you solved?"]
+    "questions": [
+      "What is the hardest bug you fixed?",
+      "Concurrency experience?",
+      "Tell me about a race condition",
+      "A tricky production issue you solved?"
+    ]
   },
   {
     "id": "work-async-70",
     "category": "Work",
     "title": "70% faster compliance workflow",
     "answer": "He cut the run time of a key compliance workflow by 70% by moving non-blocking steps to asynchronous background jobs.",
-    "questions": ["Any performance improvements?", "How did you make something faster?", "Async or background jobs experience?", "Biggest impact at work?"]
+    "questions": [
+      "Any performance improvements?",
+      "How did you make something faster?",
+      "Async or background jobs experience?",
+      "Biggest impact at work?"
+    ]
   },
   {
     "id": "work-import-pipeline",
     "category": "Work",
     "title": "Data import pipeline",
     "answer": "He built an end-to-end data import pipeline that runs in 3 stages (entities, transactions, agreements) with validation and filtering.",
-    "questions": ["Have you built data pipelines?", "ETL experience?", "Data import work?"]
+    "questions": [
+      "Have you built data pipelines?",
+      "ETL experience?",
+      "Data import work?"
+    ]
   },
   {
     "id": "work-spreadsheet-import",
     "category": "Work",
     "title": "Configurable spreadsheet import",
     "answer": "He built a configurable spreadsheet import with dynamic field mapping, type conversion and an in-app error report, so users can fix failed imports themselves.",
-    "questions": ["Excel import experience?", "Spreadsheet processing?", "User-facing features you built?"]
+    "questions": [
+      "Excel import experience?",
+      "Spreadsheet processing?",
+      "User-facing features you built?"
+    ]
   },
   {
     "id": "work-file-publishing",
     "category": "Work",
     "title": "File-publishing automation",
     "answer": "He cut redundant file generation by 70% by automating and refactoring a file-publishing workflow.",
-    "questions": ["Automation work?", "Did you reduce waste or cost?", "Refactoring results?"]
+    "questions": [
+      "Automation work?",
+      "Did you reduce waste or cost?",
+      "Refactoring results?"
+    ]
   },
   {
     "id": "work-form-generation",
     "category": "Work",
     "title": "Faster form generation",
     "answer": "He refactored a dynamic form-generation process and made it more than 60% faster.",
-    "questions": ["Frontend performance work?", "Dynamic forms?", "Other speed-ups?"]
+    "questions": [
+      "Frontend performance work?",
+      "Dynamic forms?",
+      "Other speed-ups?"
+    ]
   },
   {
     "id": "work-testing",
     "category": "Work",
     "title": "Testing",
     "answer": "He set up Playwright end-to-end tests and wrote unit and integration tests, which reduced manual regression testing.",
-    "questions": ["Do you write tests?", "Playwright experience?", "Testing approach?", "End-to-end tests?"]
+    "questions": [
+      "Do you write tests?",
+      "Playwright experience?",
+      "Testing approach?",
+      "End-to-end tests?"
+    ]
   },
   {
     "id": "work-access-control",
     "category": "Work",
     "title": "Access control",
     "answer": "He added access control and permission management for calculation tools used across reporting workflows.",
-    "questions": ["Security experience?", "Permissions or authorization work?", "Role-based access?"]
+    "questions": [
+      "Security experience?",
+      "Permissions or authorization work?",
+      "Role-based access?"
+    ]
   },
   {
     "id": "work-template-redesign",
     "category": "Work",
     "title": "Template system redesign",
     "answer": "He redesigned a template-generation system from single-file to multi-file processing to support new business cases.",
-    "questions": ["System design work at your job?", "Have you redesigned a system?", "Template generation?"]
+    "questions": [
+      "System design work at your job?",
+      "Have you redesigned a system?",
+      "Template generation?"
+    ]
   },
   {
     "id": "skills-backend",
     "category": "Skills",
     "title": "Backend skills",
     "answer": "Backend: C#, ASP.NET Core, Web API and REST APIs at work. In projects he has also used Java with Spring Boot, and Python with FastAPI.",
-    "questions": ["What backend languages do you know?", "Do you know Java?", "Python experience?", "C# experience?", "Spring Boot?"]
+    "questions": [
+      "What backend languages do you know?",
+      "Do you know Java?",
+      "Python experience?",
+      "C# experience?",
+      "Spring Boot?"
+    ]
   },
   {
     "id": "skills-messaging",
     "category": "Skills",
     "title": "Messaging and distributed systems skills",
     "answer": "Messaging and distributed systems: RabbitMQ, MassTransit, sagas, the outbox pattern, event sourcing and Centrifugo for real-time updates.",
-    "questions": ["Message queue skills?", "Kafka or RabbitMQ?", "Real-time systems?"]
+    "questions": [
+      "Message queue skills?",
+      "Kafka or RabbitMQ?",
+      "Real-time systems?"
+    ]
   },
   {
     "id": "skills-data",
     "category": "Skills",
     "title": "Databases",
     "answer": "Databases: MongoDB and Redis at work, MySQL in projects, and Qdrant as a vector database.",
-    "questions": ["Which databases do you know?", "SQL experience?", "MongoDB?", "Redis?", "Vector databases?"]
+    "questions": [
+      "Which databases do you know?",
+      "SQL experience?",
+      "MongoDB?",
+      "Redis?",
+      "Vector databases?"
+    ]
   },
   {
     "id": "skills-ai",
     "category": "Skills",
     "title": "AI and LLM skills",
     "answer": "AI: LLM tool use, the Model Context Protocol (MCP), RAG and embeddings. This chatbot is a small RAG example: it finds the best-matching card for your question.",
-    "questions": ["Do you know AI or machine learning?", "LLM experience?", "RAG experience?", "Have you used MCP?", "Embeddings?"]
+    "questions": [
+      "Do you know AI or machine learning?",
+      "LLM experience?",
+      "RAG experience?",
+      "Have you used MCP?",
+      "Embeddings?"
+    ]
   },
   {
     "id": "skills-frontend",
     "category": "Skills",
     "title": "Frontend and tools",
     "answer": "Frontend: Angular and TypeScript. Tools: Docker, Git, Playwright, and unit and integration testing.",
-    "questions": ["Frontend skills?", "Do you know Angular?", "TypeScript?", "Docker experience?", "Full stack?"]
+    "questions": [
+      "Frontend skills?",
+      "Do you know Angular?",
+      "TypeScript?",
+      "Docker experience?",
+      "Full stack?"
+    ]
   },
   {
     "id": "skills-learning",
     "category": "Skills",
     "title": "Currently learning",
     "answer": "He is currently learning Kotlin for backend work, PostgreSQL and AWS.",
-    "questions": ["What are you learning now?", "Do you know AWS?", "PostgreSQL?", "Kotlin?", "Cloud experience?"]
+    "questions": [
+      "What are you learning now?",
+      "Do you know AWS?",
+      "PostgreSQL?",
+      "Kotlin?",
+      "Cloud experience?"
+    ]
   },
   {
     "id": "project-ecommerce",
     "category": "Projects",
     "title": "E-commerce Backend API (done)",
     "answer": "E-commerce Backend API (done): an event-driven REST API in C# and ASP.NET Core with async RabbitMQ consumers for background work such as email notifications. It is split into Business, Contracts and API layers, uses MongoDB, and runs as multiple Docker containers. Code: github.com/Samiul2651/EcommerceFullProject",
-    "questions": ["Tell me about the e-commerce project", "Any .NET side projects?", "Projects with RabbitMQ and Docker?"]
+    "questions": [
+      "Tell me about the e-commerce project",
+      "Any .NET side projects?",
+      "Projects with RabbitMQ and Docker?"
+    ]
   },
   {
     "id": "project-student-ms",
     "category": "Projects",
     "title": "Student Management System (done)",
     "answer": "Student Management System (done): a REST API backend in Java and Spring Boot with CRUD operations, validation and error handling, a normalized MySQL schema and an Angular frontend with reactive forms. Code: github.com/Samiul2651/Student-Management-System-CSE310-Project-",
-    "questions": ["Any Java projects?", "Spring Boot project?", "Tell me about the student management system"]
+    "questions": [
+      "Any Java projects?",
+      "Spring Boot project?",
+      "Tell me about the student management system"
+    ]
   },
   {
     "id": "project-codelens",
     "category": "Projects",
     "title": "CodeLens (in progress)",
     "answer": "CodeLens (in progress): a RAG tool that answers questions about a codebase. It uses hybrid BM25 + vector search with reranking, built with C#, .NET 9 and Qdrant.",
-    "questions": ["What is CodeLens?", "Codebase question answering?", "RAG project?", "Qdrant project?"]
+    "questions": [
+      "What is CodeLens?",
+      "Codebase question answering?",
+      "RAG project?",
+      "Qdrant project?"
+    ]
   },
   {
     "id": "project-chatbotbackend",
     "category": "Projects",
     "title": "ChatbotBackend (in progress)",
     "answer": "ChatbotBackend (in progress): an AI browser agent. LLM tool calls drive Playwright browser actions, and progress is streamed live over server-sent events with Channel<T> fan-out. Built with C# and the Anthropic API.",
-    "questions": ["What is ChatbotBackend?", "AI agent project?", "Browser automation with AI?", "Server-sent events?"]
+    "questions": [
+      "What is ChatbotBackend?",
+      "AI agent project?",
+      "Browser automation with AI?",
+      "Server-sent events?"
+    ]
   },
   {
     "id": "project-portfolio",
     "category": "Projects",
     "title": "This site and Ask Samiul (in progress)",
     "answer": "This site (in progress): a portfolio for PC and mobile with this \"Ask Samiul\" chatbot. It uses no LLM and no server. Your question is turned into a vector in your browser with Transformers.js, matched against hand-written cards by meaning and keywords, and the best card is shown. Built with Vite and TypeScript, hosted free on GitHub Pages.",
-    "questions": ["How does this chatbot work?", "How was this site built?", "Are you an AI?", "Is this ChatGPT?", "Do you use an LLM?"]
+    "questions": [
+      "How does this chatbot work?",
+      "How was this site built?",
+      "Are you an AI?",
+      "Is this ChatGPT?",
+      "Do you use an LLM?"
+    ]
   },
   {
     "id": "project-fraction",
     "category": "Projects",
     "title": "Fraction Doc Converter (in progress)",
     "answer": "Fraction Doc Converter (in progress): converts plain-text fractions (Bengali and Arabic digits) in Word documents into real, editable equations. The web app (Python, FastAPI, lxml) is built; an Android app in Kotlin is next.",
-    "questions": ["Fraction converter?", "Any Python projects?", "Word document tool?", "Kotlin or Android project?"]
+    "questions": [
+      "Fraction converter?",
+      "Any Python projects?",
+      "Word document tool?",
+      "Kotlin or Android project?"
+    ]
   },
   {
     "id": "projects-overview",
     "category": "Projects",
     "title": "Projects overview",
     "answer": "Done: E-commerce Backend API (C#, RabbitMQ, Docker) and Student Management System (Java, Spring Boot). In progress: CodeLens (RAG over code), ChatbotBackend (AI browser agent), Fraction Doc Converter and this site.",
-    "questions": ["What projects have you built?", "Show me your projects", "Side projects?", "Portfolio projects?"]
+    "questions": [
+      "What projects have you built?",
+      "Show me your projects",
+      "Side projects?",
+      "Portfolio projects?"
+    ]
   },
   {
     "id": "education",
     "category": "Education",
     "title": "Education",
     "answer": "He has a BSc in Computer Science from BRAC University (January 2020 to September 2024), with a CGPA of 3.68 out of 4.00.",
-    "questions": ["Where did you study?", "What is your degree?", "University?", "What is your CGPA?", "When did you graduate?"]
+    "questions": [
+      "Where did you study?",
+      "What is your degree?",
+      "University?",
+      "What is your CGPA?",
+      "When did you graduate?"
+    ]
   },
   {
     "id": "research-paper",
     "category": "Research",
     "title": "Research publication",
     "answer": "He co-authored \"Enhanced CNN Approaches for Multi-Image Embedding in Image Steganography\", published at IEEE ICICT 2024. It was also his BSc thesis. Link: ieeexplore.ieee.org/document/10839645",
-    "questions": ["Do you have publications?", "Research experience?", "What was your thesis?", "IEEE paper?"]
+    "questions": [
+      "Do you have publications?",
+      "Research experience?",
+      "What was your thesis?",
+      "IEEE paper?"
+    ]
   },
   {
     "id": "cp-overview",
     "category": "Competitive programming",
     "title": "Competitive programming",
     "answer": "He is a Codeforces Expert (max rating 1695) with 100+ rated contests and 1,000+ problems solved. He also reached a max rating of 1846 on CodeChef and 1165 on AtCoder. Profile: codeforces.com/profile/Samiul2651",
-    "questions": ["Competitive programming?", "Codeforces rating?", "Are you good at algorithms?", "DSA skills?", "LeetCode?"]
+    "questions": [
+      "Competitive programming?",
+      "Codeforces rating?",
+      "Are you good at algorithms?",
+      "DSA skills?",
+      "LeetCode?"
+    ]
   },
   {
     "id": "cp-icpc",
     "category": "Competitive programming",
     "title": "ICPC results",
     "answer": "ICPC Asia West Continental Final 2023: Honourable Mention. ICPC Dhaka Regional 2023: 40th place.",
-    "questions": ["ICPC?", "Best contest result?", "Have you competed internationally?", "Awards?"]
+    "questions": [
+      "ICPC?",
+      "Best contest result?",
+      "Have you competed internationally?",
+      "Awards?"
+    ]
   },
   {
     "id": "cp-other",
     "category": "Competitive programming",
     "title": "Other contest results",
     "answer": "Other results: 40th at the IUT Inter-University Programming Contest 2024, 54th at CUET IUPC 2024, 67th at BUET IUPC 2023, and 3rd at the CS Spectrum BRACU Intra-University Contest 2023.",
-    "questions": ["Other contests?", "University programming contests?", "IUPC results?"]
+    "questions": [
+      "Other contests?",
+      "University programming contests?",
+      "IUPC results?"
+    ]
   },
   {
     "id": "fallback-help",
     "category": "Help",
     "title": "What you can ask",
-    "answer": "You can ask about his work at Orbitax, his projects, skills, education, research, competitive programming, or how to contact him.",
-    "questions": ["Help", "What can I ask?", "What do you know?", "Hi", "Hello"]
+    "answer": "You can ask about his work at Orbitax, his projects, skills, education, research, competitive programming, hobbies, or how to contact him.",
+    "questions": [
+      "Help",
+      "What can I ask?",
+      "What do you know?",
+      "Hi",
+      "Hello"
+    ]
+  },
+  {
+    "id": "hobby-japanese",
+    "category": "Hobbies",
+    "title": "Learning Japanese",
+    "answer": "He is learning Japanese in his free time and is at beginner level.",
+    "questions": [
+      "Hobbies?",
+      "Do you study Japanese?",
+      "What do you do for fun?",
+      "Free time?"
+    ]
+  },
+  {
+    "id": "hobby-tools",
+    "category": "Hobbies",
+    "title": "Building daily-use tools",
+    "answer": "He likes building small tools that solve real problems for people around him, such as a converter that turns typed fractions in Word documents into real equations for a math teacher, and a job tracker that works on phone and laptop.",
+    "questions": [
+      "What do you build for fun?",
+      "Side hobbies?",
+      "Personal tools?",
+      "Weekend projects?"
+    ]
+  },
+  {
+    "id": "hobby-selfstudy",
+    "category": "Hobbies",
+    "title": "Self-study in LLMs and RAG",
+    "answer": "In his free time he studies how LLMs and RAG work under the hood: building and training a small LLM from scratch on his laptop, and digging deep into vector search and vector databases.",
+    "questions": [
+      "What are you studying on your own?",
+      "Have you trained an LLM?",
+      "Do you study AI in your free time?",
+      "Vector database deep dive?"
+    ]
   }
 ]

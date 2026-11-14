@@ -93,3 +93,23 @@ describe('mailto', () => {
     expect(decodeURIComponent(link)).toContain('"Do you like cricket?"');
   });
 });
+
+describe('graph', async () => {
+  const { TOPICS, ROOT_CARD } = await import('../src/data/graph');
+  const ids = new Set(cards.map((c) => c.id));
+
+  it('every graph item points to a real card', () => {
+    expect(ids.has(ROOT_CARD)).toBe(true);
+    for (const t of TOPICS) for (const item of t.items) expect(ids.has(item.card), item.card).toBe(true);
+  });
+});
+
+describe('linkify', async () => {
+  const { linkify } = await import('../src/ui/text');
+  it('links github paths and emails, and escapes HTML', () => {
+    const html = linkify('Code: github.com/Samiul2651/EcommerceFullProject. Mail a@b.com <b>');
+    expect(html).toContain('<a href="https://github.com/Samiul2651/EcommerceFullProject"');
+    expect(html).toContain('<a href="mailto:a@b.com">');
+    expect(html).toContain('&lt;b&gt;');
+  });
+});
